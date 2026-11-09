@@ -6,11 +6,18 @@
   <title>Fillos | Clínica especializada em transplante capilar em Taubaté - SP</title>
   <meta name="description" content="Recupere sua autoestima com o transplante capilar. Clínica Fillos, especializada em transplante e tratamento capilar em Taubaté - SP. Agende uma avaliação gratuita.">
   <meta name="theme-color" content="#1d1b1e">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Compartilhamento (adicione og:image e og:url com os endereços absolutos após publicar) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Fillos | Transplante capilar em Taubaté - SP">
+  <meta property="og:description" content="Recupere sua autoestima com o transplante capilar. Agende uma avaliação gratuita.">
 
   <!-- Fonte: Nunito Sans (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,700;0,6..12,900;1,6..12,300;1,6..12,400;1,6..12,900&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,900&amp;display=swap">
 
   <link rel="stylesheet" href="main.css">
 </head>
@@ -20,13 +27,13 @@
   <!-- =====================================================================
        HERO
        ===================================================================== -->
-  <header class="hero">
-    <img class="hero__bg" src="assets/hero-bg.jpg" alt="" width="1024" height="820">
+  <header class="hero" id="topo">
+    <img class="hero__bg" src="assets/hero-bg.jpg" alt="" width="1024" height="820" fetchpriority="high">
 
     <div class="wrap wrap--flush hero__inner">
-      <a class="hero__logo" href="#topo" id="topo">
-        <img src="assets/logo-fillos.png" alt="Fillos - Transplante &amp; Tratamento Capilar" width="256" height="105">
-      </a>
+      <div class="hero__logo">
+        <img src="assets/logo-fillos.png" alt="Fillos - Transplante &amp; Tratamento Capilar" width="256" height="105" fetchpriority="high">
+      </div>
 
       <div class="hero__copy">
         <h1 class="hero__title">Recupere sua <span class="hero__title-hl">autoestima</span> com o transplante capilar</h1>
@@ -63,27 +70,27 @@
             <legend class="sr-only">Selecione o seu nível de calvície</legend>
             <label class="level">
               <input type="radio" name="nivel" value="1" required>
-              <img src="assets/nivel-1.png" alt="Nível de calvície 1" width="239" height="229">
+              <img src="assets/nivel-1.png" alt="Nível de calvície 1" width="239" height="229" loading="lazy" decoding="async">
             </label>
             <label class="level">
               <input type="radio" name="nivel" value="2">
-              <img src="assets/nivel-2.png" alt="Nível de calvície 2" width="239" height="229">
+              <img src="assets/nivel-2.png" alt="Nível de calvície 2" width="239" height="229" loading="lazy" decoding="async">
             </label>
             <label class="level">
               <input type="radio" name="nivel" value="3">
-              <img src="assets/nivel-3.png" alt="Nível de calvície 3" width="239" height="229">
+              <img src="assets/nivel-3.png" alt="Nível de calvície 3" width="239" height="229" loading="lazy" decoding="async">
             </label>
             <label class="level">
               <input type="radio" name="nivel" value="4">
-              <img src="assets/nivel-4.png" alt="Nível de calvície 4" width="239" height="229">
+              <img src="assets/nivel-4.png" alt="Nível de calvície 4" width="239" height="229" loading="lazy" decoding="async">
             </label>
             <label class="level">
               <input type="radio" name="nivel" value="5">
-              <img src="assets/nivel-5.png" alt="Nível de calvície 5" width="239" height="229">
+              <img src="assets/nivel-5.png" alt="Nível de calvície 5" width="239" height="229" loading="lazy" decoding="async">
             </label>
             <label class="level">
               <input type="radio" name="nivel" value="6">
-              <img src="assets/nivel-6.png" alt="Nível de calvície 6" width="239" height="229">
+              <img src="assets/nivel-6.png" alt="Nível de calvície 6" width="239" height="229" loading="lazy" decoding="async">
             </label>
           </fieldset>
 
@@ -94,7 +101,7 @@
             </div>
             <div class="field">
               <label class="field__label" for="telefone">Telefone para contato</label>
-              <input class="field__input" type="tel" id="telefone" name="telefone" placeholder="(12) 9 9999 - 9999" autocomplete="tel" inputmode="tel" required>
+              <input class="field__input" type="tel" id="telefone" name="telefone" placeholder="(12) 9 9999 - 9999" autocomplete="tel" inputmode="tel" pattern="[0-9()+\s.\-]{10,}" title="Informe o telefone com DDD, por exemplo (12) 9 9999-9999" required>
             </div>
           </div>
 
@@ -112,19 +119,19 @@
 
         <div class="vantagens">
           <article class="vcard">
-            <img class="vcard__icon" src="assets/icone-resultados.svg" alt="" width="43" height="43">
+            <img class="vcard__icon" src="assets/icone-resultados.svg" alt="" width="43" height="43" loading="lazy" decoding="async">
             <h3 class="vcard__title">Resultados naturais:</h3>
             <p class="vcard__text">O transplante capilar utiliza folículos capilares saudáveis para restaurar o cabelo perdido. Isso garante resultados naturais e duradouros.</p>
           </article>
 
           <article class="vcard vcard--destaque">
-            <img class="vcard__icon" src="assets/icone-recuperacao.svg" alt="" width="57" height="57">
+            <img class="vcard__icon" src="assets/icone-recuperacao.svg" alt="" width="57" height="57" loading="lazy" decoding="async">
             <h3 class="vcard__title">Recuperação rápida:</h3>
             <p class="vcard__text">O transplante capilar é um procedimento minimamente invasivo, com recuperação rápida. Os pacientes podem voltar para casa no mesmo dia e retomar suas atividades habituais em poucos dias.</p>
           </article>
 
           <article class="vcard">
-            <img class="vcard__icon" src="assets/icone-seguranca.svg" alt="" width="43" height="43">
+            <img class="vcard__icon" src="assets/icone-seguranca.svg" alt="" width="43" height="43" loading="lazy" decoding="async">
             <h3 class="vcard__title">Segurança:</h3>
             <p class="vcard__text">O transplante capilar é um procedimento seguro, realizado por médicos especialistas.</p>
           </article>
@@ -143,19 +150,19 @@
 
         <div class="dcards">
           <article class="dcard">
-            <img class="dcard__icon" src="assets/icone-atendimento.svg" alt="" width="74" height="74">
+            <img class="dcard__icon" src="assets/icone-atendimento.svg" alt="" width="74" height="74" loading="lazy" decoding="async">
             <h3 class="dcard__title">Atendimento personalizado</h3>
             <p class="dcard__text">O transplante capilar utiliza folículos capilares saudáveis para restaurar o cabelo perdido. Isso garante resultados naturais e duradouros.</p>
           </article>
 
           <article class="dcard">
-            <img class="dcard__icon" src="assets/icone-tecnologia.svg" alt="" width="74" height="74">
+            <img class="dcard__icon" src="assets/icone-tecnologia.svg" alt="" width="74" height="74" loading="lazy" decoding="async">
             <h3 class="dcard__title">Tecnologia de ponta</h3>
             <p class="dcard__text">O transplante capilar utiliza folículos capilares saudáveis para restaurar o cabelo perdido. Isso garante resultados naturais e duradouros.</p>
           </article>
 
           <article class="dcard">
-            <img class="dcard__icon" src="assets/icone-equipe.svg" alt="" width="74" height="74">
+            <img class="dcard__icon" src="assets/icone-equipe.svg" alt="" width="74" height="74" loading="lazy" decoding="async">
             <h3 class="dcard__title">Equipe médica experiente</h3>
             <p class="dcard__text">O transplante capilar utiliza folículos capilares saudáveis para restaurar o cabelo perdido. Isso garante resultados naturais e duradouros.</p>
           </article>
@@ -174,8 +181,8 @@
         <p class="prepos__text">Antes do transplante capilar, é necessário realizar alguns exames e procedimentos para garantir a segurança do paciente. Após o transplante, é importante seguir as orientações médicas para garantir uma recuperação rápida e eficaz.</p>
 
         <div class="prepos__photos">
-          <img src="assets/pre-tratamento.jpg" alt="Couro cabeludo antes do transplante capilar" width="263" height="225">
-          <img src="assets/pos-tratamento.jpg" alt="Couro cabeludo depois do transplante capilar" width="263" height="225">
+          <img src="assets/pre-tratamento.jpg" alt="Couro cabeludo antes do transplante capilar" width="263" height="225" loading="lazy" decoding="async">
+          <img src="assets/pos-tratamento.jpg" alt="Couro cabeludo depois do transplante capilar" width="263" height="225" loading="lazy" decoding="async">
         </div>
 
         <a class="btn btn--outline" href="#contato"><em>Pré e pós tratamento?</em> <strong>Saiba mais agora!</strong></a>
@@ -192,14 +199,14 @@
         <!-- Para ativar o player, cole a URL de incorporação (embed) do vídeo em data-embed. -->
         <div class="video" data-embed="">
           <button class="video__button" type="button" aria-label="Reproduzir vídeo: como funciona o transplante capilar FUE na Fillos">
-            <img class="video__cover" src="assets/video-capa.jpg" alt="Reportagem na Band sobre a clínica Fillos" width="696" height="300">
-            <img class="video__play" src="assets/icone-play.svg" alt="" width="65" height="65">
+            <img class="video__cover" src="assets/video-capa.jpg" alt="Reportagem na Band sobre a clínica Fillos" width="696" height="300" loading="lazy" decoding="async">
+            <img class="video__play" src="assets/icone-play.svg" alt="" width="65" height="65" loading="lazy" decoding="async">
           </button>
         </div>
 
         <p class="band">
           <span class="band__text">Presença exclusiva da <strong>Fillos</strong> na <strong>Band</strong></span>
-          <img class="band__logo" src="assets/logo-band.png" alt="Band" width="70" height="40">
+          <img class="band__logo" src="assets/logo-band.png" alt="Band" width="70" height="41" loading="lazy" decoding="async">
         </p>
       </div>
     </section>
@@ -213,7 +220,7 @@
 
         <div class="equipe">
           <p class="equipe__text">Somos uma clínica especializada em transplante capilar, localizada em Taubaté - SP. Oferecemos um atendimento personalizado para cada paciente, com o objetivo de resgatar a autoestima e a qualidade de vida.</p>
-          <img class="equipe__photo" src="assets/equipe.jpg" alt="Médico e enfermeira da equipe Fillos" width="270" height="334">
+          <img class="equipe__photo" src="assets/equipe.jpg" alt="Médico e enfermeira da equipe Fillos" width="270" height="334" loading="lazy" decoding="async">
           <a class="btn equipe__cta" href="#contato">Conheça a <strong>Fillos</strong></a>
         </div>
       </div>
@@ -227,9 +234,9 @@
         <h2 class="title title--contato" id="titulo-contato">Entre em contato conosco para agendar uma consulta ou saber mais sobre nossos serviços.</h2>
 
         <div class="clinica">
-          <img src="assets/clinica-recepcao.jpg" alt="Recepção da clínica Fillos" width="218" height="250">
-          <img src="assets/clinica-sala-1.jpg" alt="Sala de procedimentos da clínica Fillos" width="218" height="250">
-          <img src="assets/clinica-sala-2.jpg" alt="Consultório da clínica Fillos" width="218" height="250">
+          <img src="assets/clinica-recepcao.jpg" alt="Recepção da clínica Fillos" width="218" height="250" loading="lazy" decoding="async">
+          <img src="assets/clinica-sala-1.jpg" alt="Sala de procedimentos da clínica Fillos" width="218" height="250" loading="lazy" decoding="async">
+          <img src="assets/clinica-sala-2.jpg" alt="Consultório da clínica Fillos" width="218" height="250" loading="lazy" decoding="async">
         </div>
 
         <a class="btn btn--contato" href="#avaliacao">Entre em <strong>contato</strong></a>
@@ -238,7 +245,7 @@
 
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <span class="sr-only">Fillos - Clínica especializada em transplante capilar - Taubaté, SP</span>
   </footer>
 
