@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 427318264">
+<circle id="Ellipse 434" cx="37" cy="37" r="36.5" stroke="#FBBF56"/>
+<g id="StarFill" clip-path="url(#clip0_0_17)">
+<path id="Vector" d="M23.0618 59.2942C21.8796 59.9006 20.5382 58.8379 20.7771 57.4812L23.319 42.9956L12.5298 32.7178C11.5222 31.7562 12.0459 29.9983 13.3965 29.8084L28.3966 27.6769L35.0851 14.4255C35.6884 13.2311 37.3208 13.2311 37.9241 14.4255L44.6126 27.6769L59.6127 29.8084C60.9633 29.9983 61.4869 31.7562 60.4763 32.7178L49.6902 42.9956L52.2321 57.4812C52.4709 58.8379 51.1296 59.9006 49.9474 59.2942L36.5 52.3852L23.0618 59.2942Z" fill="url(#paint0_linear_0_17)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_17" x1="36.5042" y1="13.5297" x2="85.1704" y2="49.8875" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FBBF56"/>
+<stop offset="1" stop-color="#926E2F"/>
+</linearGradient>
+<clipPath id="clip0_0_17">
+<rect width="49" height="49" fill="white" transform="translate(12 12)"/>
+</clipPath>
+</defs>
+</svg>
